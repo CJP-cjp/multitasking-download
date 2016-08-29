@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2em-If-vAp">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="Tj6-BE-snS">
+            <objects>
+                <tableViewController id="UZS-BW-LK2" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8jD-qp-9kT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CTM-ve-1qH">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CTM-ve-1qH" id="5ES-8t-Bel">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UZS-BW-LK2" id="yuV-PN-h1h"/>
+                            <outlet property="delegate" destination="UZS-BW-LK2" id="JIa-b0-zJe"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Title" id="NzO-4n-d7f">
+                        <barButtonItem key="rightBarButtonItem" title="跳转" id="MxL-YN-r5Q">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="917-gr-Wdh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eZe-8N-6aX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="184" y="101"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Qa-Hm-ZZU">
+            <objects>
+                <navigationController id="2em-If-vAp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6k9-PS-So9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UZS-BW-LK2" kind="relationship" relationship="rootViewController" id="djP-WY-6Cd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="axU-fz-uJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-587" y="95"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iil-vW-Zbm">
+                                <rect key="frame" x="275" y="275" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.43188593790000002" green="1" blue="0.19630873039999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0o0-Xy-yn1"/>
+                                    <constraint firstAttribute="height" constant="50" id="FO4-u4-XHo"/>
+                                </constraints>
+                                <state key="normal" title="下载"/>
+                                <connections>
+                                    <action selector="downloadClick4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gcu-kW-B8D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uf1-SZ-dQ2">
+                                <rect key="frame" x="275" y="399" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="SHO-jH-zDf"/>
+                                    <constraint firstAttribute="height" constant="30" id="TIl-lg-dsX"/>
+                                </constraints>
+                                <state key="normal" title="暂停"/>
+                                <connections>
+                                    <action selector="pauseClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SrQ-Ss-T2i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9x7-Rh-6Mp">
+                                <rect key="frame" x="275" y="484" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gAk-IB-r5K"/>
+                                    <constraint firstAttribute="width" constant="30" id="hbN-DH-Lad"/>
+                                </constraints>
+                                <state key="normal" title="继续"/>
+                                <connections>
+                                    <action selector="continueClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uN6-py-spt"/>
+                                    <action selector="downloadClick4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kio-RJ-LKe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iil-vW-Zbm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AZM-NB-pzA"/>
+                            <constraint firstItem="iil-vW-Zbm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HDC-Hi-tud"/>
+                            <constraint firstItem="Uf1-SZ-dQ2" firstAttribute="leading" secondItem="iil-vW-Zbm" secondAttribute="leading" id="bJf-Mx-tMz"/>
+                            <constraint firstItem="9x7-Rh-6Mp" firstAttribute="leading" secondItem="Uf1-SZ-dQ2" secondAttribute="leading" id="ccv-Xa-1LN"/>
+                            <constraint firstItem="9x7-Rh-6Mp" firstAttribute="top" secondItem="Uf1-SZ-dQ2" secondAttribute="bottom" constant="55" id="fwf-WT-2zQ"/>
+                            <constraint firstItem="Uf1-SZ-dQ2" firstAttribute="top" secondItem="iil-vW-Zbm" secondAttribute="bottom" constant="74" id="sZM-9E-lZ6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gob-lW-1um"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="95"/>
+        </scene>
+    </scenes>
+</document>
