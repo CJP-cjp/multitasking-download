@@ -7,25 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0472D1781D77D12E00621175 /* NSString+path.m in Sources */ = {isa = PBXBuildFile; fileRef = 0472D1771D77D12E00621175 /* NSString+path.m */; };
 		0473133A1D74E92200C9C242 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 047313391D74E92200C9C242 /* main.m */; };
 		0473133D1D74E92200C9C242 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0473133C1D74E92200C9C242 /* AppDelegate.m */; };
 		047313401D74E92200C9C242 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0473133F1D74E92200C9C242 /* ViewController.m */; };
-		047313431D74E92200C9C242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047313411D74E92200C9C242 /* Main.storyboard */; };
 		047313451D74E92200C9C242 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047313441D74E92200C9C242 /* Assets.xcassets */; };
 		047313481D74E92200C9C242 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 047313461D74E92200C9C242 /* LaunchScreen.storyboard */; };
+		047313511D74F40200C9C242 /* MultitaskTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047313501D74F40200C9C242 /* MultitaskTableCell.m */; };
+		0473137A1D74FD2900C9C242 /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 047313791D74FD2900C9C242 /* BookModel.m */; };
+		0473137C1D75015B00C9C242 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0473137B1D75015B00C9C242 /* Main.storyboard */; };
+		0473137F1D7510C400C9C242 /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0473137E1D7510C400C9C242 /* DownloadManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0472D1761D77D12E00621175 /* NSString+path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+path.h"; sourceTree = "<group>"; };
+		0472D1771D77D12E00621175 /* NSString+path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+path.m"; sourceTree = "<group>"; };
 		047313351D74E92200C9C242 /* multitasking download.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "multitasking download.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		047313391D74E92200C9C242 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0473133B1D74E92200C9C242 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0473133C1D74E92200C9C242 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0473133E1D74E92200C9C242 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0473133F1D74E92200C9C242 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		047313421D74E92200C9C242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		047313441D74E92200C9C242 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		047313471D74E92200C9C242 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		047313491D74E92200C9C242 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0473134F1D74F40200C9C242 /* MultitaskTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultitaskTableCell.h; sourceTree = "<group>"; };
+		047313501D74F40200C9C242 /* MultitaskTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultitaskTableCell.m; sourceTree = "<group>"; };
+		047313781D74FD2900C9C242 /* BookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookModel.h; sourceTree = "<group>"; };
+		047313791D74FD2900C9C242 /* BookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
+		0473137B1D75015B00C9C242 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0473137D1D7510C400C9C242 /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		0473137E1D7510C400C9C242 /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,9 +51,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0472D1751D77D12E00621175 /* path */ = {
+			isa = PBXGroup;
+			children = (
+				0472D1761D77D12E00621175 /* NSString+path.h */,
+				0472D1771D77D12E00621175 /* NSString+path.m */,
+			);
+			path = path;
+			sourceTree = "<group>";
+		};
 		0473132C1D74E92100C9C242 = {
 			isa = PBXGroup;
 			children = (
+				0472D1751D77D12E00621175 /* path */,
 				047313371D74E92200C9C242 /* multitasking download */,
 				047313361D74E92200C9C242 /* Products */,
 			);
@@ -62,11 +84,17 @@
 				0473133C1D74E92200C9C242 /* AppDelegate.m */,
 				0473133E1D74E92200C9C242 /* ViewController.h */,
 				0473133F1D74E92200C9C242 /* ViewController.m */,
-				047313411D74E92200C9C242 /* Main.storyboard */,
 				047313441D74E92200C9C242 /* Assets.xcassets */,
 				047313461D74E92200C9C242 /* LaunchScreen.storyboard */,
 				047313491D74E92200C9C242 /* Info.plist */,
 				047313381D74E92200C9C242 /* Supporting Files */,
+				0473134F1D74F40200C9C242 /* MultitaskTableCell.h */,
+				047313501D74F40200C9C242 /* MultitaskTableCell.m */,
+				047313781D74FD2900C9C242 /* BookModel.h */,
+				047313791D74FD2900C9C242 /* BookModel.m */,
+				0473137B1D75015B00C9C242 /* Main.storyboard */,
+				0473137D1D7510C400C9C242 /* DownloadManager.h */,
+				0473137E1D7510C400C9C242 /* DownloadManager.m */,
 			);
 			path = "multitasking download";
 			sourceTree = "<group>";
@@ -136,9 +164,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0473137C1D75015B00C9C242 /* Main.storyboard in Resources */,
 				047313481D74E92200C9C242 /* LaunchScreen.storyboard in Resources */,
 				047313451D74E92200C9C242 /* Assets.xcassets in Resources */,
-				047313431D74E92200C9C242 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0472D1781D77D12E00621175 /* NSString+path.m in Sources */,
+				0473137F1D7510C400C9C242 /* DownloadManager.m in Sources */,
 				047313401D74E92200C9C242 /* ViewController.m in Sources */,
+				0473137A1D74FD2900C9C242 /* BookModel.m in Sources */,
+				047313511D74F40200C9C242 /* MultitaskTableCell.m in Sources */,
 				0473133D1D74E92200C9C242 /* AppDelegate.m in Sources */,
 				0473133A1D74E92200C9C242 /* main.m in Sources */,
 			);
@@ -158,14 +190,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		047313411D74E92200C9C242 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				047313421D74E92200C9C242 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		047313461D74E92200C9C242 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -300,6 +324,7 @@
 				0473134E1D74E92200C9C242 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
